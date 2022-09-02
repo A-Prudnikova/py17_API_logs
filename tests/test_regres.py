@@ -36,6 +36,3 @@ def test_update():
     assert isinstance(response.json()['job'], str)
 
 
-def test_delete():
-    response = req_session().delete('/api/users/2')
-    assert response.status_code == 204
